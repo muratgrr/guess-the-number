@@ -40,20 +40,18 @@ function gues() {
     restart.classList.toggle("none");
     imgCon.style.backgroundImage = "url(./img/congratulations.gif)";
     p.classList.add("none");
-    console.log(p.classList);
   } else if (tahminHakki === 0) {
     h2.textContent = `sorry you lost. guess the number = ${randomSayi}`;
     inputCon.classList.toggle("none");
     restart.classList.toggle("none");
     imgCon.style.backgroundImage = "url(./img/youlose.gif)";
     p.classList.add("none");
-    console.log(p.classList);
   }
 }
 
 function tahminAraligi() {
-  if (tahminiSayi > 100) {
-    lastNum.innerText = 100;
+  if (tahminiSayi > lastNum.innerText) {
+    lastNum.innerText;
   } else if (tahminiSayi < randomSayi) {
     return (firstNum.innerText = tahminiSayi);
   } else {
