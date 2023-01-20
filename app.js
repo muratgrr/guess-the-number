@@ -52,6 +52,8 @@ function gues() {
 function tahminAraligi() {
   if (tahminiSayi > lastNum.innerText) {
     lastNum.innerText;
+  } else if (tahminiSayi < firstNum.innerText) {
+    firstNum.innerText;
   } else if (tahminiSayi < randomSayi) {
     return (firstNum.innerText = tahminiSayi);
   } else {
